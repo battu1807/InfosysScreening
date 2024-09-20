@@ -4,7 +4,7 @@
 RewardsApp is Rest API based application using which the reward points are allocated to the customers based on their transactios.
 
 
-### Code Walkthrough & Postman Transactions 
+### Code Walkthrough & Postman Transactions  (Video)
 Ref: https://www.loom.com/share/1180675ede454ff2b906b6d104a11359?sid=f1db5042-2b37-4ef5-98b9-77260eff10c8
 
 ### Git Repo
