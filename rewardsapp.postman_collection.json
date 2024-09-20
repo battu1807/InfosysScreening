@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "8e4bd100-4b79-45c8-b7af-8828ebf5f77f",
+		"name": "rewardsapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38441177"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/customer/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\" : \"customerOne\",\r\n    \"emailId\": \"customerOne@gmail.com\",\r\n    \"phoneNumber\": \"1234123411\",\r\n    \"password\": \"customerOne@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "customerOne@123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "customerOne",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\" : \"customerOne\",\r\n    \"emailId\": \"customerOne@gmail.com\",\r\n    \"phoneNumber\": \"1234123411\",\r\n    \"password\": \"customerOne@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydWRyYSIsImlhdCI6MTcyNjgyODkwNywiZXhwIjoxNzI2ODMyNTA3fQ.2UpixpMV2I13i82mt8Cl62rzTLfHKLonsG9Jrc1dPsI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"customerName\": \"Rudra\",\r\n    \"emailId\": \"rudra@gmail.com\",\r\n    \"phoneNumber\": \"1234512345\",\r\n    \"password\": \"rudra@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/register Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "customerOne@123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "customerOne",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"customerTwo\",\r\n    \"emailId\": \"customerTwo@gmail.com\",\r\n    \"phoneNumber\": \"1234512345\",\r\n    \"password\": \"customerTwo@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/customer/register Copy 2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lck9uZSIsImlhdCI6MTcyNjg0NDExMCwiZXhwIjoxNzI2ODQ3NzEwfQ.IljYzU7aWeW5PZWLHVZRUdwsQF8a4w7ot4SXYlyG4hA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"customerThree\",\r\n    \"emailId\": \"customerThree@gmail.com\",\r\n    \"phoneNumber\": \"1234512345\",\r\n    \"password\": \"customerThree@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reward",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lck9uZSIsImlhdCI6MTcyNjg0NDExMCwiZXhwIjoxNzI2ODQ3NzEwfQ.IljYzU7aWeW5PZWLHVZRUdwsQF8a4w7ot4SXYlyG4hA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 1,\r\n    \"rewardMonth\": 1,\r\n    \"rewardYear\": 2024,\r\n    \"points\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/reward/customer/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reward",
+						"customer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reward/total",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lck9uZSIsImlhdCI6MTcyNjg0NDExMCwiZXhwIjoxNzI2ODQ3NzEwfQ.IljYzU7aWeW5PZWLHVZRUdwsQF8a4w7ot4SXYlyG4hA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 1,\r\n    \"rewardMonth\": 1,\r\n    \"rewardYear\": 2024,\r\n    \"points\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/reward/total",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reward",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lck9uZSIsImlhdCI6MTcyNjg0NDExMCwiZXhwIjoxNzI2ODQ3NzEwfQ.IljYzU7aWeW5PZWLHVZRUdwsQF8a4w7ot4SXYlyG4hA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"spentDetails\": \"books\",\r\n    \"amount\": 230,\r\n    \"date\": \"2022-01-13\",\r\n    \"customerId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/order/postMultiple",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lck9uZSIsImlhdCI6MTcyNjg0NDExMCwiZXhwIjoxNzI2ODQ3NzEwfQ.IljYzU7aWeW5PZWLHVZRUdwsQF8a4w7ot4SXYlyG4hA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 230,\r\n        \"date\": \"2024-01-15\",\r\n        \"customerId\": 2\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 140,\r\n        \"date\": \"2022-02-13\",\r\n        \"customerId\": 2\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 90,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 2\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 230,\r\n        \"date\": \"2024-01-15\",\r\n        \"customerId\": 1\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 140,\r\n        \"date\": \"2022-02-13\",\r\n        \"customerId\": 1\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 90,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 1\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 110,\r\n        \"date\": \"2024-01-15\",\r\n        \"customerId\": 3\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 500,\r\n        \"date\": \"2022-02-13\",\r\n        \"customerId\": 3\r\n    },\r\n    {\r\n        \"spentDetails\": \"books\",\r\n        \"amount\": 30,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 3\r\n    },\r\n    {\r\n        \"spentDetails\": \"pens\",\r\n        \"amount\": 230,\r\n        \"date\": \"2024-01-15\",\r\n        \"customerId\": 2\r\n    },\r\n    {\r\n        \"spentDetails\": \"cloths\",\r\n        \"amount\": 140,\r\n        \"date\": \"2022-02-13\",\r\n        \"customerId\": 2\r\n    },\r\n    {\r\n        \"spentDetails\": \"bags\",\r\n        \"amount\": 90,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 2\r\n    },\r\n    {\r\n        \"spentDetails\": \"bags\",\r\n        \"amount\": 230,\r\n        \"date\": \"2024-01-15\",\r\n        \"customerId\": 1\r\n    },\r\n    {\r\n        \"spentDetails\": \"cloths\",\r\n        \"amount\": 140,\r\n        \"date\": \"2022-02-13\",\r\n        \"customerId\": 1\r\n    },\r\n    {\r\n        \"spentDetails\": \"pens\",\r\n        \"amount\": 90,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 1\r\n    },\r\n    {\r\n        \"spentDetails\": \"pens\",\r\n        \"amount\": 110,\r\n        \"date\": \"2024-01-15\",\r\n        \"customerId\": 3\r\n    },\r\n    {\r\n        \"spentDetails\": \"cloths\",\r\n        \"amount\": 500,\r\n        \"date\": \"2022-02-13\",\r\n        \"customerId\": 3\r\n    },\r\n    {\r\n        \"spentDetails\": \"bags\",\r\n        \"amount\": 30,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 3\r\n    },\r\n    {\r\n        \"spentDetails\": \"bags\",\r\n        \"amount\": 30,\r\n        \"date\": \"2022-03-13\",\r\n        \"customerId\": 4\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/postMultiple",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"postMultiple"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api-docs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjdXN0b21lck9uZSIsImlhdCI6MTcyNjg1OTE0OSwiZXhwIjoxNzI2ODYyNzQ5fQ.AwgGfk-6uca8td2yFXtKfJWdF_MmnAQBvBOYfcCLsKE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api-docs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
